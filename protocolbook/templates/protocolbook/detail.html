@@ -1,0 +1,19 @@
+{% if protocol %}
+
+
+	{% for p in protocol %}
+	<h1>Details for document with protocol number: {{ p.protocolNo }}</h1>
+	<ul>
+		<li>Document No: {{ p.documentNo}}</li>
+		<li>Document Date: {{ p.documentDate }}</li> 
+		<li>Document Description: {{ p.documentDesc}}</li>
+		<li>Document From: {{ p.documentFrom }}</li>
+		<li>Document To: {{ p.documentTo }}</li> 
+		<li>Document Value: {{ p.documentValue }} KM</li>
+	</ul>
+	{% endfor %}
+{% else %}
+    <p>No Protocols are available.</p>
+{% endif %}
+
+<li><a href="/protocolbook/">Back</a>

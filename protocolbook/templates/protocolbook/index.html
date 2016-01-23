@@ -1,0 +1,10 @@
+<h1> Protocol Book </h1>
+{% if latest_protocol_list %}
+    <ul>
+    {% for protocol in latest_protocol_list %}
+        <li><a href="/protocolbook/{{ protocol.id }}/">{{ protocol.protocolNo }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Protocols are available.</p>
+{% endif %}
