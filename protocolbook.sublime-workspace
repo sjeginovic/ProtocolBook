@@ -3,6 +3,22 @@
 	{
 		"selected_items":
 		[
+			[
+				"protoco",
+				"protocol"
+			],
+			[
+				"pro",
+				"protocolNo"
+			],
+			[
+				"compan",
+				"companyName"
+			],
+			[
+				"C",
+				"CASCADE"
+			]
 		]
 	},
 	"buffers":
@@ -11,15 +27,18 @@
 			"file": "protocolbook/views.py",
 			"settings":
 			{
-				"buffer_size": 167,
+				"buffer_size": 669,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/sjeginovic/Desktop/Terminal.desktop",
+			"contents": "\n\n\n\n\n\ndef index(request):\n	return HttpResponse (\"Welcome\")",
+			"file": "ProtocolBook/views.py",
+			"file_size": 52,
+			"file_write_time": 130980619725066604,
 			"settings":
 			{
-				"buffer_size": 227,
+				"buffer_size": 58,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,15 +46,42 @@
 			"file": "protocolbook/urls.py",
 			"settings":
 			{
-				"buffer_size": 116,
+				"buffer_size": 185,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ProtocolBook/urls.py",
+			"file": "protocolbook/templates/protocolbook/detail.html",
 			"settings":
 			{
-				"buffer_size": 834,
+				"buffer_size": 530,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\"\"\"ProtocolBook URL Configuration\n\nThe `urlpatterns` list routes URLs to views. For more information please see:\n    https://docs.djangoproject.com/en/1.9/topics/http/urls/\nExamples:\nFunction views\n    1. Add an import:  from my_app import views\n    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')\nClass-based views\n    1. Add an import:  from other_app.views import Home\n    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')\nIncluding another URLconf\n    1. Import the include() function: from django.conf.urls import url, include\n    2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))\n\"\"\"\nfrom django.conf.urls import include,url\nfrom django.contrib import admin\n\nurlpatterns = [\n	url(r'^$', views.index, name='index'),\n    url(r'^admin/', admin.site.urls),\n    url(r'^protocolbook/', include('protocolbook.urls')),\n]\n",
+			"file": "ProtocolBook/urls.py",
+			"file_size": 834,
+			"file_write_time": 130980525528924489,
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protocolbook/models.py",
+			"settings":
+			{
+				"buffer_size": 761,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protocolbook/templates/protocolbook/index.html",
+			"settings":
+			{
+				"buffer_size": 289,
 				"line_ending": "Unix"
 			}
 		}
@@ -73,17 +119,23 @@
 	"expanded_folders":
 	[
 		"/home/sjeginovic/Projects/ProtocolBook",
-		"/home/sjeginovic/Projects/ProtocolBook/ProtocolBook",
-		"/home/sjeginovic/Projects/ProtocolBook/ProtocolBook/__pycache__",
-		"/home/sjeginovic/Projects/ProtocolBook/protocolbook"
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook",
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/templates"
 	],
 	"file_history":
 	[
-		"/home/sjeginovic/Projects/ProtocolBook/ProtocolBook/settings.py"
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/models.py",
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/apps.py",
+		"/home/sjeginovic/Projects/ProtocolBook/ProtocolBook/settings.py",
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/admin.py",
+		"/home/sjeginovic/Projects/ProtocolBook/ProtocolBook/urls.py",
+		"/home/sjeginovic/Desktop/Terminal.desktop",
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/urls.py",
+		"/home/sjeginovic/Projects/ProtocolBook/protocolbook/views.py"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -97,6 +149,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Protocol"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -114,7 +167,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -123,15 +176,43 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 669,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								141,
-								141
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ProtocolBook/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								0
 							]
 						],
 						"settings":
@@ -146,48 +227,76 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/home/sjeginovic/Desktop/Terminal.desktop",
+					"buffer": 2,
+					"file": "protocolbook/urls.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 227,
+						"buffer_size": 185,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								75,
+								75
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 288.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "protocolbook/urls.py",
+					"buffer": 3,
+					"file": "protocolbook/templates/protocolbook/detail.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 116,
+						"buffer_size": 530,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								116,
-								116
+								530,
+								530
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ProtocolBook/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								775,
+								775
 							]
 						],
 						"settings":
@@ -202,31 +311,60 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "ProtocolBook/urls.py",
+					"buffer": 5,
+					"file": "protocolbook/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 834,
+						"buffer_size": 761,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								682,
-								682
+								413,
+								413
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "protocolbook/templates/protocolbook/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -234,11 +372,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 40.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 56.0
 	},
 	"layout":
 	{
@@ -271,7 +409,7 @@
 	"project": "protocolbook.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 76.0
 	},
 	"save_all_on_build": true,
 	"select_file":
